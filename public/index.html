@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Download GEOTRANS — Aplikasi Absensi</title>
+  <style>
+    :root {
+      --bg: #f5f6f8;
+      --card: #ffffff;
+      --text: #1a2330;
+      --muted: #6b7480;
+      --primary: #1565c0;
+      --primary-dark: #0d47a1;
+      --radius: 16px;
+    }
+    * { box-sizing: border-box; margin: 0; }
+    html, body { height: 100%; }
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .card {
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 40px 28px;
+      max-width: 420px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 12px 32px rgba(20, 30, 50, .10);
+    }
+    h1 { font-size: 2rem; letter-spacing: .02em; }
+    .sub { color: var(--muted); margin: 6px 0 20px; font-weight: 500; }
+    .desc { font-size: .95rem; line-height: 1.6; color: var(--muted); margin-bottom: 28px; }
+    .btn {
+      display: inline-block;
+      width: 100%;
+      padding: 16px;
+      background: var(--primary);
+      color: #fff;
+      font-size: 1.05rem;
+      font-weight: 700;
+      border-radius: 12px;
+      text-decoration: none;
+      transition: background .15s;
+    }
+    .btn:hover { background: var(--primary-dark); }
+    .meta {
+      margin-top: 14px;
+      font-size: .85rem;
+      color: var(--muted);
+    }
+    footer {
+      margin-top: 28px;
+      font-size: .8rem;
+      color: var(--muted);
+      line-height: 1.8;
+    }
+    @media (prefers-reduced-motion: no-preference) {
+      .btn:active { transform: scale(.98); }
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <h1>GEOTRANS</h1>
+    <p class="sub">Aplikasi Absensi</p>
+    <p class="desc">
+      Aplikasi absensi yang memudahkan pencatatan kehadiran secara cepat dan akurat.
+      Unduh dan pasang di perangkat Android kamu.
+    </p>
+
+    <!-- TODO: isi DRIVE_ID -->
+    <a class="btn" id="download" rel="noopener" target="_blank"
+       href="https://drive.usercontent.google.com/download?id=DRIVE_ID&export=download">
+      Download APK
+    </a>
+    <p class="meta">Versi 1.0.0 &middot; 25 MB</p>
+
+    <footer>
+      Android 8.0 (Oreo) ke atas<br>
+      Kontak: support@example.com
+    </footer>
+  </main>
+</body>
+</html>
